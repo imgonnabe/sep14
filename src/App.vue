@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <menuPage/> <!-- 메뉴 컴포넌트 보이기 -->
+ <router-view/> <!-- 라우트된 페이지가 보일 곳 -->
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import menuPage from './components/MenuPage.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+ name: 'App',
+ components: {
+ menuPage
+ }
 }
 </script>
-
 <style>
+body{
+ margin: 0;
+ padding: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ font-family: Avenir, Helvetica, Arial, sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ text-align: center;
+ color: #2c3e50;
 }
 </style>
